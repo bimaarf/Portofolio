@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" class="dark scroll-smooth [--scroll-mt:9.875rem] lg:[--scroll-mt:6.3125rem]">
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" href="%PUBLIC_URL%/logo.jpg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta property="title" content="Hi, I&#x27;m Bima Arifa - Bima Arifa Portfolio" />
+  <meta property="og:title" content="Hi, I&#x27;m Bima Arifa - Bima Arifa Portfolio" />
+  <meta name="description" property="description"
+    content="Bima Arifa Personal Portfolio Website, Blog, Project Showcase, and My Experience History." />
+  <meta name="description" property="og:description"
+    content="Bima Arifa Personal Portfolio Website, Blog, Project Showcase, and My Experience History." />
+  <meta name="url" property="og:url" content="https://bimarf.in" />
+  <meta name="author" content="@bimaarf_ instagram">
+  <meta name="keywords" content="bimarf, bimaarifa, bimaarf">
+  <meta name="theme-color" content="#000000" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+  <meta name="theme-color" content="#000000" />
+  <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo.jpg" />
+  <style>
+    /* CSS only for demo purpose*/
+    #btn-back-to-top {
+      position: fixed;
+      display: none;
+    }
+  </style>
+  <title>React App</title>
+  <style>
+    .bg-slate-900 {
+      background-color: rgb(15 23 42);
+    }
+  </style>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-white dark:bg-gray-900">
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <div id="root"></div>
+  <button id="to-top-button" onclick="goToTop()" title="Go To Top"
+    class="hidden fixed z-90 bottom-8 right-8 border-0 w-14 h-14 rounded-full drop-shadow-md bg-indigo-500 text-white text-sm font-bold"><i
+      class="fa fa-arrow-up"></i></button>
+  <script>
+    var toTopButton = document.getElementById("to-top-button");
+    window.onscroll = function () {
+      if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+        toTopButton.classList.remove("hidden");
+      } else {
+        toTopButton.classList.add("hidden");
+      }
+    }
+    function goToTop() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+
+  </script>
+</body>
+
+</html>
